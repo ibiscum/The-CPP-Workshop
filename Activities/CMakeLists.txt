@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.20)
+project(The_CPP_Workshop_Ac)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(ac01 Activity01.cpp)
+add_executable(ac02 Activity02.cpp)
+add_executable(ac03 Activity03.cpp)
+add_executable(ac04 Activity04.cpp)
+add_executable(ac05 Activity05.cpp)
+add_executable(ac06 Activity06.cpp)
+add_executable(ac07 Activity07.cpp)
+add_executable(ac08 Activity08.cpp)
+add_executable(ac09 Activity09.cpp)
+add_executable(ac10 Activity10.cpp)
+add_executable(ac11 Activity11.cpp)
+add_executable(ac12 Activity12.cpp)
+add_executable(ac13 Activity13.cpp)
