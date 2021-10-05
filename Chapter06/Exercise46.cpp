@@ -9,7 +9,7 @@ struct noisy
 
 int main()
 {
-    noisy* p = new noisy[3];
+    auto* p = new noisy[3];
     delete p;
     return 0;
 }

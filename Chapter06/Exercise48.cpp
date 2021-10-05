@@ -6,14 +6,17 @@ struct numeric_item
     int value_;
     numeric_item* next_;
 };
+
 numeric_item* head = nullptr;
+
 void add(int v, numeric_item** pp)
 {
-    numeric_item* newp = new numeric_item;
+    auto* newp = new numeric_item;
     newp->value_ = v;
     newp->next_ = *pp;
     *pp = newp;
 }
+
 numeric_item** find(int v, numeric_item** pp)
 {
     while((*pp) != nullptr && (*pp)->value_ != v)
@@ -22,6 +25,7 @@ numeric_item** find(int v, numeric_item** pp)
     }
     return pp;
 }
+
 void print()
 {
    for (numeric_item* p = head; p != nullptr; p = p->next_)
@@ -30,6 +34,7 @@ void print()
    }
    cout << endl;
 }
+
 int main()
 {
    for (int i = 1; i < 10; i = i + 2)
@@ -55,6 +60,4 @@ int main()
    }
 
    return 0;
-
 }
-

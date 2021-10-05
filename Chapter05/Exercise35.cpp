@@ -6,6 +6,7 @@ struct mydata
     char const* name_;
     bool hero_;
 };
+
 mydata heroes[]
 {
     { "Spider Man", true },

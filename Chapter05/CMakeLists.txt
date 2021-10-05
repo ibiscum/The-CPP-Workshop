@@ -3,7 +3,6 @@ project(The_CPP_Workshop_Ch05)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ch05_ac05 ../Activities/Activity05.cpp)
 add_executable(ch05_ex26 Exercise26.cpp)
 add_executable(ch05_ex27 Exercise27.cpp)
 add_executable(ch05_ex28 Exercise28.cpp)

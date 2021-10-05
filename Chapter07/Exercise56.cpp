@@ -15,10 +15,10 @@ shared_ptr<char[]> func(shared_ptr<char[]> str)
 int main()
 {
     shared_ptr<char[]> null;
-    if (null.get() == nullptr)
+    if (null == nullptr)
         cout << "null is equal to nullptr" << endl;
     auto result1 = func(null);
-    if (result1.get() == nullptr)
+    if (result1 == nullptr)
         cout << "result1 is equal to nullptr" << endl;
     result1 = func(result1);
 

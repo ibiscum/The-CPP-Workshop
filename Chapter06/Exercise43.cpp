@@ -8,4 +8,3 @@ int main()
     cout << "p[0] = " << p[0] << endl;
     return 0;
 }
-

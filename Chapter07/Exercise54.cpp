@@ -15,7 +15,7 @@ class autobuf
     unique_ptr<noisy> np_;
     unique_ptr<char[]> ptr_;
 public:
-    autobuf(char const* str);
+    explicit autobuf(char const* str);
     char* get();
 };
 

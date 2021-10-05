@@ -16,7 +16,7 @@ int main()
 {
     char string[] { "uvwxyz" };
     char buffer[10];
-    copychars (string, buffer, 7);
+    copychars(string, buffer, 7);
     cout << buffer << endl;
     return 0;
 }

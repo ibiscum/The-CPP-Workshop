@@ -9,6 +9,6 @@ struct noisy
 
 int main()
 {
-    noisy* p = new noisy;
+    auto* p = new noisy;
     delete[] p;
 }

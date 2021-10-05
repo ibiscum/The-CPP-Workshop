@@ -10,6 +10,7 @@ struct numeric_item
 class numeric_list
 {
     numeric_item* head_;
+
 public:
     numeric_list() : head_(nullptr) {}
    ~numeric_list();
@@ -17,6 +18,7 @@ public:
     void add(int v);
     numeric_item* find(int v);
 };
+
 numeric_list::~numeric_list()
 {
    while (head_ != nullptr)
@@ -70,4 +72,3 @@ int main()
    
     return 0;
 }
-

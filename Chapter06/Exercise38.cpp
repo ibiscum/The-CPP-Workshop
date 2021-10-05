@@ -18,10 +18,8 @@ public:
 int main()
 {
     noisy N(1);
-    noisy* p = new noisy(2);
+    auto* p = new noisy(2);
     delete p;
 
     return 0;
 }
-
-

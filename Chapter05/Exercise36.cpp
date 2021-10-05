@@ -5,11 +5,12 @@ struct mydata
 {
     char const* name_;
     bool darkside_;
-    mydata (char const* name, bool dark) 
+    mydata(char const* name, bool dark)
     { 
         name_ = name; darkside_ = dark; 
     }
 };
+
 mydata cast[3]
 {
     { "Darth Vader", true },
