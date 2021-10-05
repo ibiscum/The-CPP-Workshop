@@ -32,4 +32,5 @@ int main()
         std::cout << "Invalid choice.";
         break;
     }
+	return 0;
 }

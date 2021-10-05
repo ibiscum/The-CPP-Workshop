@@ -28,4 +28,5 @@ int main()
         std::cout << i << "\n";
         ++numbersPrinted;
     }
+	return 0;
 }

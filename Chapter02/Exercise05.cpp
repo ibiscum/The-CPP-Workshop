@@ -17,7 +17,5 @@ int main()
     {
         std::cout << "The number you entered was greater than 10!\n";
     }
-    
     return 0;
 }
-

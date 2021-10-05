@@ -33,9 +33,9 @@ int main()
             {
                 continue; 
             }
-            
             std::cout << ", ";
-         }
-       std::cout << "\n\n";
+        }
+		std::cout << "\n\n";
     }
+	return 0;
 }

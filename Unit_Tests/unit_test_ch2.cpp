@@ -1,12 +1,10 @@
-Chapter 2 : Exercise 5
+// Chapter 2 : Exercise 5
 #include <iostream>
 #include <string>
-#include "gtest/gtest.h"
-using namespace std;
+#include <gtest/gtest.h>
 
 std::string GetNumber(int number)
 {
-
 	if (number < 10)
 	{
 		return "The number you entered was less than 10!\n";
@@ -17,29 +15,18 @@ std::string GetNumber(int number)
 	}
 }
 
-TEST(Chapter2, Exercise5) {
-
-EXPECT_EQ("The number you entered was less than 10!\n", GetNumber(2));
-EXPECT_EQ("The number you entered was greater than 10!\n", GetNumber(34));
-}
-
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise05)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("The number you entered was less than 10!\n", GetNumber(2));
+	EXPECT_EQ("The number you entered was greater than 10!\n", GetNumber(34));
 }
 
-Chapter 2 : Exercise 6
+// Chapter 2 : Exercise 6
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
-
-std::string Menu(int number)
+std::string MenuA(int number)
 {
 	std::ostringstream out;
+
 	if (number == 1)
 	{
 		out << "Fries: $0.99\n";
@@ -59,29 +46,17 @@ std::string Menu(int number)
 	return out.str();
 }
 
-TEST(Chapter2, Exercise6
-) {
-
-EXPECT_EQ("Fries: $0.99\n", Menu(1));
-EXPECT_EQ("Burger: $1.25\n", Menu(2));
-EXPECT_EQ("Shake: $1.50\n", Menu(3));
-EXPECT_EQ("Invalid choice.", Menu(4));
-}
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise06)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("Fries: $0.99\n",  MenuA(1));
+	EXPECT_EQ("Burger: $1.25\n", MenuA(2));
+	EXPECT_EQ("Shake: $1.50\n",  MenuA(3));
+	EXPECT_EQ("Invalid choice.", MenuA(4));
 }
 
-Chapter 2 : Exercise 7
+// Chapter 2 : Exercise 7
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
-
-std::string Menu(int number)
+std::string MenuB(int number)
 {
 	std::ostringstream out;
 	switch (number)
@@ -102,63 +77,35 @@ std::string Menu(int number)
 		out << "Invalid choice.";
 		break;
 	}
-
 	return out.str();
 }
 
-TEST(Chapter2, Exercise7
-) {
-
-EXPECT_EQ("Fries: $0.99\n", Menu(1));
-EXPECT_EQ("Burger: $1.25\n", Menu(2));
-EXPECT_EQ("Shake: $1.50\n", Menu(3));
-EXPECT_EQ("Invalid choice.", Menu(4));
-}
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise07)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("Fries: $0.99\n",  MenuB(1));
+	EXPECT_EQ("Burger: $1.25\n", MenuB(2));
+	EXPECT_EQ("Shake: $1.50\n",  MenuB(3));
+	EXPECT_EQ("Invalid choice.", MenuB(4));
 }
 
-Chapter 2 : Exercise 9
+// Chapter 2 : Exercise 9
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
-
-std::string WhileLoop()
+std::string WhileLoopA()
 {
 	std::ostringstream out;
 	while (false)
 	{
 		out << "Hello World!";
 	}
-
 	return out.str();
 }
 
-TEST(Chapter2, Exercise9
-) {
-
-EXPECT_EQ("",
-WhileLoop()
-);
-}
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise09_1)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("",WhileLoopA());
 }
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
-
-std::string WhileLoop()
+std::string WhileLoopB()
 {
 	std::ostringstream out;
 
@@ -170,26 +117,12 @@ std::string WhileLoop()
 	return out.str();
 }
 
-TEST(Chapter2, Exercise9
-) {
-
-EXPECT_EQ("Hello World!",
-WhileLoop()
-);
-}
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise09_2)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("Hello World!", WhileLoopB());
 }
 
-Chapter 2 : Exercise 10
-
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
+// Chapter 2 : Exercise 10
 
 std::string ForLoop()
 {
@@ -203,28 +136,26 @@ std::string ForLoop()
 	return out.str();
 }
 
-TEST(Chapter2, Exercise10
-) {
-
-EXPECT_EQ("01234",
-ForLoop()
-);
-}
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise10)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("01234",	ForLoop());
 }
 
-Chapter 2 : Exercise 11
+//int main(int argc, char* argv[])
+//{
+//	::testing::InitGoogleTest(&argc, argv);
+//
+//	return RUN_ALL_TESTS();
+//}
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
+// Chapter 2 : Exercise 11
 
-std::string WhileLoop()
+//#include <iostream>
+//#include <string>
+//#include "gtest/gtest.h"
+//using namespace std;
+
+std::string WhileLoopC()
 {
 	std::ostringstream out;
 
@@ -238,26 +169,23 @@ std::string WhileLoop()
 	return out.str();
 }
 
-TEST(Chapter2, Exercise11
-) {
-
-EXPECT_EQ("\n1\n2\n3\n4\n5",
-WhileLoop()
-);
-}
-
-int main(int argc, char* argv[])
+TEST(Chapter02, Exercise11)
 {
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("\n1\n2\n3\n4\n5", WhileLoopC());
 }
 
-Chapter 2 : Activity 1
+//int main(int argc, char* argv[])
+//{
+//	::testing::InitGoogleTest(&argc, argv);
+//	return RUN_ALL_TESTS();
+//}
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
+// Chapter 2 : Activity 1
+
+//#include <iostream>
+//#include <string>
+//#include "gtest/gtest.h"
+//using namespace std;
 
 std::string Loop(int multiple, int count)
 {
@@ -281,25 +209,24 @@ std::string Loop(int multiple, int count)
 	return out.str();
 }
 
-TEST(Chapter2, Activity1
-) {
-
-EXPECT_EQ("4\n8\n12\n16\n20\n24\n28\n32\n36\n40\n", Loop(4, 10));
-}
-
-int main(int argc, char* argv[])
+TEST(Chapter02, Activity01)
 {
-	::testing::InitGoogleTest(&argc, argv);
-
-	return RUN_ALL_TESTS();
+	EXPECT_EQ("4\n8\n12\n16\n20\n24\n28\n32\n36\n40\n", Loop(4, 10));
 }
 
-Chapter 2 : Activity 2
+//int main(int argc, char* argv[])
+//{
+//	::testing::InitGoogleTest(&argc, argv);
+//
+//	return RUN_ALL_TESTS();
+//}
 
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-using namespace std;
+// Chapter 2 : Activity 2
+
+//#include <iostream>
+//#include <string>
+//#include "gtest/gtest.h"
+//using namespace std;
 
 std::string GuessNumber(int guess, int minNumber, int maxNumber)
 {
@@ -307,7 +234,7 @@ std::string GuessNumber(int guess, int minNumber, int maxNumber)
 
 	int randomNumber = 0;
 	// Generate random number within range.
-	srand((unsigned)time(0));
+	srand((unsigned)time(nullptr));
 	randomNumber = rand() % (maxNumber - minNumber + 1) + minNumber;
 
 	if (guess == randomNumber)
@@ -321,11 +248,10 @@ std::string GuessNumber(int guess, int minNumber, int maxNumber)
 	return out.str();
 }
 
-TEST(Chapter2, Activity2
-) {
-
-EXPECT_EQ("Your guess was too high. ", GuessNumber (11, 10, 12));
-EXPECT_EQ("Well done, you guessed the number!\n", GuessNumber (11, 10, 11));
+TEST(Chapter02, Activity02)
+{
+	EXPECT_EQ("Your guess was too high. ", GuessNumber(13, 10, 12));
+	EXPECT_EQ("Well done, you guessed the number!\n", GuessNumber(11, 10, 11));
 }
 
 int main(int argc, char* argv[])
