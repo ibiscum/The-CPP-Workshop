@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.20)
+project(The_CPP_Workshop_Ch06)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(ch06_ac06 ../Activities/Activity06.cpp)
+add_executable(ch06_ex37 Exercise37.cpp)
+add_executable(ch06_ex38 Exercise38.cpp)
+add_executable(ch06_ex39 Exercise39.cpp)
+add_executable(ch06_ex29 Exercise29.cpp)
+add_executable(ch06_ex30 Exercise30.cpp)
+add_executable(ch06_ex31 Exercise31.cpp)
+add_executable(ch06_ex32 Exercise32.cpp)
+add_executable(ch06_ex33 Exercise33.cpp)
+add_executable(ch06_ex34 Exercise34.cpp)
+add_executable(ch06_ex35 Exercise35.cpp)
+add_executable(ch06_ex36 Exercise36.cpp)
