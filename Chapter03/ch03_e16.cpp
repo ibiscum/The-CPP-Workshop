@@ -1,15 +1,14 @@
 // Vector example.
 #include <iostream>
-#include <string>
 #include <vector>
 
 std::vector<int> myVector;
 
 void PrintVector()
 {
-   for (int i = 0; i < myVector.size(); ++i)
+   for (int i : myVector)
    {
-      std::cout << myVector[i];
+      std::cout << i;
    }
    std::cout << "\n\n";
 }

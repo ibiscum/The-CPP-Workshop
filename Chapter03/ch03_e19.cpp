@@ -6,7 +6,7 @@ class MyClass
    public:
      int myInt = 0;
      bool myBool = false;
-   std::string GetString()
+   static std::string GetString()
      {
        return "Hello World!";
      }
@@ -15,7 +15,7 @@ struct MyStruct
  {
     int myInt = 0;
     bool myBool = false;
-    std::string GetString()
+    static std::string GetString()
      {
        return "Hello World!";
      }
@@ -30,5 +30,5 @@ int main()
   MyStruct structObject;
   std::cout << "\nstructObject::myInt: " << structObject.myInt << "\n";
   std::cout << "structObject::myBool: " << structObject.myBool << "\n";
-  std::cout << "structbject::GetString: " << structObject.GetString() <<"\n";
+  std::cout << "structObject::GetString: " << structObject.GetString() <<"\n";
 }
