@@ -1,6 +1,5 @@
 // Preprocessor directives activity.
 #include <iostream>
-#include <string>
 
 #define GRADE_C_THRESHOLD 25
 #define GRADE_B_THRESHOLD 50

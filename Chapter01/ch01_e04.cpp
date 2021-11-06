@@ -1,6 +1,5 @@
 // IO Exercise.
 #include <iostream>
-#include <string>
 
 int Max(int a, int b) 
 {
