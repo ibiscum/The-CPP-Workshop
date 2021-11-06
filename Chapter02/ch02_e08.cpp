@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main()
+int main() 
+
 {
     bool bIsRunning = true;
     while (bIsRunning) 
@@ -19,21 +20,22 @@ int main()
         switch (number) 
         {
             case 1:
-				std::cout << "Fries: $0.99\n";
-				break;
+                std::cout << "Fries: $0.99\n";
+            break;
 
             case 2: 
                 std::cout << "Burger: $1.25\n";
-				break;
+            break;
 
             case 3: 
                 std::cout << "Shake: $1.50\n";
-				break;
+            break;
 
             default:
                 std::cout << "Invalid choice.";
-				break;
+            break;
         }
     }
-	return 0;
+
+    return 0;
 }

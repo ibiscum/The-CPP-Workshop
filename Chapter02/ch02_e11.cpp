@@ -7,8 +7,8 @@
 int main()
 {
     bool bIsRunning = true;
-    std::string input = "";
-    int count = 0;
+    std::string input;
+    int count;
     std::cout << "***Random number generator***\n";
     
     while (bIsRunning)
@@ -25,7 +25,7 @@ int main()
           }
         
         // Generate and output random numbers.
-        srand((unsigned)time(0));
+        srand((unsigned)time(nullptr));
         for (int i = 0; i < count; ++i)
         {
             std::cout << rand() % 10;  
@@ -33,9 +33,9 @@ int main()
             {
                 continue; 
             }
+            
             std::cout << ", ";
-        }
-		std::cout << "\n\n";
+         }
+       std::cout << "\n\n";
     }
-	return 0;
 }
