@@ -1,18 +1,19 @@
 // Operator Overloading Example
 #include <iostream>
 #include <string>
+#include <utility>
 
 class Person
 {
 public:
-    Person(int age, std::string name) : age(age), name(name)
+    Person(int age, std::string name) : age(age), name(std::move(name))
     {
     };
     
-    float age = 0;
-    std::string name = "";
+    int age = 0;
+    std::string name;
     
-    bool operator == (Person const& other)
+    bool operator == (Person const& other) const
     {
          return ((age == other.age) && (name == other.name));
     }

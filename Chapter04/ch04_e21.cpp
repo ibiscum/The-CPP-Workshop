@@ -1,6 +1,5 @@
 // Exercise 21: Prime number checker.
 #include <iostream>
-#include <string>
 
 int main()
 {
