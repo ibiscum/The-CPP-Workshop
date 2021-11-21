@@ -1,7 +1,9 @@
 // Arrays exercise.
 #include <iostream>
 #include <string>
+
 #define NAME_COUNT 5
+
 int main()
 {
 	std::string names[NAME_COUNT][2]{ "" };

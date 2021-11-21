@@ -4,12 +4,14 @@
 #include <utility>
 #include <vector>
 #include <stdexcept>
+
 struct Person
 {
 	int age = 0;
 	std::string name;
 };
 std::vector<Person> records;
+
 void AddRecord(std::string newName, int newAge)
 {
 	Person newRecord;
@@ -23,6 +25,7 @@ Person FetchRecord(int userID)
 {
 	return records.at(userID);
 }
+
 int main()
 {
 	std::cout << "User SignUp Application\n" << std::endl;

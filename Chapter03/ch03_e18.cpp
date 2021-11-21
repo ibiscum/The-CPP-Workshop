@@ -5,17 +5,18 @@
 class MyClass
 {
 public:
-	int myPublicInt = 0;
+  int myPublicInt = 0;
 protected:
-	int myProtectedInt = 0;
+  int myProtectedInt = 0;
 private:
-	int myPrivateInt = 0;
+  int myPrivateInt = 0;
 };
 
 int main()
 {
-	MyClass testClass;
-	std::cout << testClass.myPublicInt << "\n";
-	std::cout << testClass.myProtectedInt << "\n";
-	std::cout << testClass.myPrivateInt << "\n";
+  MyClass testClass;
+  std::cout << testClass.myPublicInt << "\n";
+  std::cout << testClass.myProtectedInt << "\n";
+  std::cout << testClass.myPrivateInt << "\n";
+  return 0;
 }
